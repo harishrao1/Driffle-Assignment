@@ -1,0 +1,245 @@
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  background-color: rgb(17, 12, 2);
+  font-family: "Roobert", Inter, sans-serif;
+}
+
+/* Header  */
+.headerContainer {
+  position: fixed;
+  width: 100%;
+  height: 73px;
+  top: 0;
+  border: 1px solid rgba(236, 229, 221, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0a0a0a;
+  color: rgba(111, 108, 108, 0.9);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.headerContainer img:first-child {
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 30px;
+  padding: 10px;
+}
+.headerContent {
+  display: flex;
+  align-items: center;
+}
+.currency {
+  margin-right: 20px;
+  font-size: 14px;
+  color: white;
+}
+.cart {
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  background-color: rgba(226, 218, 202, 0.4);
+  border-radius: 50%;
+}
+.heartIcon,
+.contactIcon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+}
+
+.circle-1 {
+  width: 850px;
+  height: 850px;
+  top: -14px;
+  left: 180px;
+  border: 1px dashed rgba(236, 229, 229, 0.5);
+}
+
+.circle-2 {
+  width: 600px;
+  height: 600px;
+  left: 305px;
+  top: 105px;
+  border: 1px dashed rgba(236, 229, 229, 0.2);
+  /* animation: circle-2-rotation 8s linear infinite; */
+}
+
+.circle-3 {
+  width: 400px;
+  height: 400px;
+  top: 200px;
+  left: 405px;
+  border: 1px dashed rgba(250, 242, 242, 0.4);
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.image-1 {
+  background-image: url("./assets/spiderman.png");
+  animation: image-1-rotation 180s linear infinite;
+}
+
+.image-2 {
+  background-image: url("./assets/fifa.png");
+  animation: image-2-rotation 165s linear infinite;
+}
+
+.image-3 {
+  background-image: url("./assets/batman.png");
+  animation: image-3-rotation 200s linear infinite;
+}
+.image-4 {
+  background-image: url("./assets/minecraft.png");
+  animation: image-4-rotation 200s linear infinite;
+}
+
+.image-5 {
+  background-image: url("./assets/mortalkombat.png");
+  animation: image-5-rotation 280s linear infinite;
+}
+
+@keyframes image-1-rotation {
+  from {
+    transform: translate(-50%, -50%) rotate(0) translateX(200px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateX(200px);
+  }
+}
+
+@keyframes image-2-rotation {
+  from {
+    transform: translate(-50%, -50%) rotate(0) translateX(300px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateX(300px);
+  }
+}
+
+@keyframes image-3-rotation {
+  from {
+    transform: translate(-50%, -50%) rotate(0) translateX(300px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateX(300px);
+  }
+}
+@keyframes image-4-rotation {
+  from {
+    transform: translate(-50%, -50%) rotate(0) translateX(425px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateX(425px);
+  }
+}
+
+@keyframes image-5-rotation {
+  from {
+    transform: translate(-50%, -50%) rotate(0) translateX(425px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateX(425px);
+  }
+}
+
+.colorAnimation {
+  position: absolute;
+  width: 944px;
+  height: 600px;
+  top: 50px;
+  left: 200px;
+  background: linear-gradient(
+    109.55deg,
+    rgba(33, 83, 211, 0.4) 13.73%,
+    rgba(39, 103, 123, 0.4) 85.66%
+  );
+  filter: blur(120px);
+}
+.contentContainer {
+  position: absolute;
+  width: 674px;
+  height: 344px;
+  top: 190px;
+  left: 302px;
+  /* background: linear-gradient(
+    109.55deg,
+    rgba(33, 83, 211, 0.4) 13.73%,
+    rgba(39, 103, 123, 0.4) 85.66%
+  ); */
+  /* filter: blur(10px); */
+  /* z-index: 2; */
+  /* pointer-events: none; */
+}
+.headingContainer h1 {
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 68px;
+  font-family: Roobert;
+  color: rgb(165, 158, 158);
+  pointer-events: none;
+}
+.headingContainer h1 span {
+  color: green;
+}
+.headingContainer p {
+  text-align: center;
+  font-weight: 400;
+  height: 88px;
+  font-family: Inter;
+  font-size: 14px;
+  color: #7e7e7e;
+  pointer-events: none;
+}
+button {
+  position: absolute;
+  top: 300px;
+  left: 230px;
+  border-radius: 50px;
+  background-color: rgba(236, 229, 221, 0.1);
+  width: 168px;
+  height: 48px;
+  color: aliceblue;
+  border: 0.5px solid wheat;
+  cursor: pointer;
+}
+button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: translateY(-50%) rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+button:hover::before {
+  opacity: 1;
+}
